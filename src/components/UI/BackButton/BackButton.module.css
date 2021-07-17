@@ -1,0 +1,29 @@
+.BackButton {
+  width: 3.5rem;
+  height: 2.3rem;
+  background-color: rgb(77, 77, 77);
+  border: none;
+  border-radius: 5px;
+  margin-right: 5rem;
+  cursor: pointer;
+}
+
+.IconContainer {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .BackButton {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .BackButton {
+    margin-right: 1rem;
+  }
+}

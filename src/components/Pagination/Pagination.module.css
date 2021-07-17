@@ -1,0 +1,84 @@
+.PagNav {
+  display: block;
+  margin: 1rem 0;
+  height: 2.5rem;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pagination {
+  position: absolute;
+  right: 8.9rem;
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.PageItem {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  margin-right: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.PageItem:hover {
+  background-color: #969696;
+}
+
+.ActivePageItem {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #969696;
+  border-radius: 5px;
+  margin-right: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d1d1d1;
+  color: black;
+}
+
+.PageLink {
+  text-decoration: none;
+  color: white;
+  padding-bottom: 3px;
+}
+
+.ActivePageLink {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 3px;
+}
+
+@media (max-width: 1000px) {
+  .Pagination {
+    right: 5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .Pagination {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .PageItem {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .ActivePageItem {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
